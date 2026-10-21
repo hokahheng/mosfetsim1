@@ -1,0 +1,7 @@
+#!/bin/sh
+# -t must match the tool name registered on nanoHUB.
+/usr/bin/invoke_app "$@" -t mosfetsim \
+                         -C "python3 @tool/main.py" \
+                         -u anaconda-7 \
+                         -r none \
+                         -w captive
